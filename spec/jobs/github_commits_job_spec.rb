@@ -11,9 +11,9 @@ describe GithubCommitsJob do
       @project = FactoryBot.create(:project)
       @project.source_repositories.create(url: 'https://github.com/AgileVentures/WebsiteOne')
       @project_without_url = FactoryBot.create(:project)
-      @project_with_empty_repo = FactoryBot.create(:project, github_url: 'https://github.com/AgileVentures/empty_project')
+      # @project_with_empty_repo = FactoryBot.create(:project, github_url: 'https://github.com/AgileVentures/empty_project')
       @project_with_empty_repo = FactoryBot.create(:project)
-      # @project_with_empty_repo.source_repositories.create(url: 'https://github.com/AgileVentures/empty_project')
+      @project_with_empty_repo.source_repositories.create(url: 'https://github.com/AgileVentures/empty_project')
       @users_with_github_profile_urls = [
         FactoryBot.create(:user, github_profile_url: 'https://github.com/tochman'),
       ]
@@ -27,11 +27,7 @@ describe GithubCommitsJob do
     it 'stores commit counts only for projects that have a github_url' do
       expect(project.commit_counts.count).to eq(1)
       expect(project_without_url.commit_counts.count).to eq 0
-      expect(project_with_empty_repo.commit_counts.count).to eq 0
-    end
-    
-    it 'stores commit counts only for projects that have a github_url' do
-      expect(project.commit_counts.count).to eq(1)
+      # expect(project_with_empty_repo.commit_counts.count).to eq 0
     end
 
     it 'stores total commit count only for projects that have a github_url' do
@@ -59,6 +55,7 @@ describe GithubCommitsJob do
     it 'executes user_commits method even if total_commits dies for project' do
       allow(GithubCommitsJob).to receive(:update_total_commits_for).and_raise "StandardError"
       expect(GithubCommitsJob).to receive(:update_user_commit_counts_for).with project
+      expect(GithubCommitsJob).to receive(:update_user_commit_counts_for).with @project_with_empty_repo
       GithubCommitsJob.run
     end
   end

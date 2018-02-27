@@ -232,4 +232,298 @@ http_interactions:
         Joseph","type":"Anonymous","contributions":1},{"login":"bill-auger","id":1642691,"avatar_url":"https://avatars0.githubusercontent.com/u/1642691?v=3","gravatar_id":"","url":"https://api.github.com/users/bill-auger","html_url":"https://github.com/bill-auger","followers_url":"https://api.github.com/users/bill-auger/followers","following_url":"https://api.github.com/users/bill-auger/following{/other_user}","gists_url":"https://api.github.com/users/bill-auger/gists{/gist_id}","starred_url":"https://api.github.com/users/bill-auger/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/bill-auger/subscriptions","organizations_url":"https://api.github.com/users/bill-auger/orgs","repos_url":"https://api.github.com/users/bill-auger/repos","events_url":"https://api.github.com/users/bill-auger/events{/privacy}","received_events_url":"https://api.github.com/users/bill-auger/received_events","type":"User","site_admin":false,"contributions":1}]'
     http_version: 
   recorded_at: Fri, 28 Apr 2017 10:11:25 GMT
-recorded_with: VCR 3.0.1
+- request:
+    method: get
+    uri: https://api.github.com/repos/AgileVentures/empty_project/contributors?anon=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 27 Feb 2018 15:39:07 GMT
+      Content-Type:
+      - application/octet-stream
+      Status:
+      - 204 No Content
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '31'
+      X-Ratelimit-Reset:
+      - '1519749399'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.028576'
+      X-Github-Request-Id:
+      - D81C:665E:71495A:E470C5:5A957B9B
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 27 Feb 2018 15:39:08 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/AgileVentures/empty_project/stats/contributors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 27 Feb 2018 15:51:46 GMT
+      Content-Type:
+      - application/octet-stream
+      Status:
+      - 204 No Content
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '30'
+      X-Ratelimit-Reset:
+      - '1519749399'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.026487'
+      X-Github-Request-Id:
+      - E645:665F:624D67:F3AA24:5A957E91
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 27 Feb 2018 15:51:46 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/AgileVentures/empty_project/stats/contributors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 27 Feb 2018 15:51:49 GMT
+      Content-Type:
+      - application/octet-stream
+      Status:
+      - 204 No Content
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '29'
+      X-Ratelimit-Reset:
+      - '1519749399'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.022986'
+      X-Github-Request-Id:
+      - E658:665C:538843:B3AC19:5A957E95
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 27 Feb 2018 15:51:50 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/AgileVentures/empty_project/stats/contributors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 27 Feb 2018 15:51:53 GMT
+      Content-Type:
+      - application/octet-stream
+      Status:
+      - 204 No Content
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '28'
+      X-Ratelimit-Reset:
+      - '1519749399'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.026263'
+      X-Github-Request-Id:
+      - E669:665E:72876D:E716B1:5A957E99
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 27 Feb 2018 15:51:54 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/AgileVentures/empty_project/contributors?anon=1&per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.8.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 27 Feb 2018 15:53:24 GMT
+      Content-Type:
+      - application/octet-stream
+      Status:
+      - 204 No Content
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '27'
+      X-Ratelimit-Reset:
+      - '1519749399'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.030995'
+      X-Github-Request-Id:
+      - E815:665C:53AA10:B3F572:5A957EF4
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 27 Feb 2018 15:53:25 GMT
+recorded_with: VCR 4.0.0
