@@ -50,7 +50,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    @project = Project.find(params[:event][:slug])
+    @project = Project.find(params[:event][:id])
     if @project.update_attributes(project_params)
       add_to_feed(:update)
       respond_to do |format|
