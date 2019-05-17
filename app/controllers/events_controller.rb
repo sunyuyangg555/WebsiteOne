@@ -47,18 +47,20 @@ class EventsController < ApplicationController
   end
 
   def update
+    @event = Project.find(params[:event][:id])
     begin
       updated = @event.update_attributes(transform_params)
     rescue
       attr_error = 'attributes invalid'
     end
     if updated
-      flash[:notice] = 'Event Updated'
-      redirect_to event_path(@event)
+      respond_to do |format|
+        format.json { render json: { event: @event }}
+      end
     else
-      flash[:alert] = ['Failed to update event:', @event.errors.full_messages, attr_error].join(' ')
-      @projects = Project.all
-      render 'edit'
+      respond_to do |format|
+        format.json { render json: { error: @event.errors.full_messages }}
+      end
     end
   end
 
