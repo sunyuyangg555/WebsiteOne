@@ -47,7 +47,7 @@ class EventsController < ApplicationController
   end
 
   def update
-    @event = Event.find(params[:event][:slug])
+    @event = Event.find_by(slug: params[:event][:slug])
     begin
       updated = @event.update_attributes(transform_params)
     rescue
