@@ -842,7 +842,7 @@ DEPENDENCIES
   zeus
 
 RUBY VERSION
-   ruby 2.5.3p105
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.17.1
